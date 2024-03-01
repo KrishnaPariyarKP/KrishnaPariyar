@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KpCode</title>
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="javascript" href="jsevents.js">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="javascript/jsevents.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="hdr">
+      <div class="logo"><label class="txt">KpCode</label></div> 
+      <div class="navdiv">
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <img src="images/icons8-menu-100.png" alt="menubar" class="menubar">
+        <nav class="menu2">
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a onclick="downloadResume()">Resume</a></li>
+          </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="home" id="home">
+        <div class="homeDetail" id="home">
+            <p>Hey! I am <span id="name">Krishna Pariyar</span></p>
+            <p><b>Software Developer</b></p>
+            <p>I help your business succeed! by creating trusted softwares to manage your business</p>
+            <p>Full Stack Developer => <a href="#projects">Tech Stack</a></p>
+            <br>
+            <div class="hImg">
+                <h2>The kind of work i do</h2>
+                <p><img src="images/icons8-pencil-64.png" id="icon">     Project Plan</p>
+                <p><img src="images/icons8-monitor-50.png" id="icon">   Software Development</p>
+                <p><img src="images/icons8-maintenance-50.png" id="icon">   Software Maintenance</p>
+            </div> 
+        </div>
+        <div class="hImg2">
+            <img src="images/Untitled-1.png" id="crtimg" class="floating-image">
+        </div>
+    </div>
+
+    <div class="aa" >
+        <h1 id="txt">ABOUT</h1>
+        <div id="about">
+            <div class="imgdiv1">
+            <img class="myimg"src="images/IMG-20211218-WA0005.jpg" alt="Krishna Pariyar">
+            </div>
+            <div class="text1">
+                <h1>Krishna Pariyar</h1>
+                <h3>Software Developer</h3>
+                <div id="maildiv">kp.bhusa2021@gmail.com</div>
+            </div>
+        </div>
+            <div class="text2">Software Developer with over one years of professional learning and working experience. Skilled in C#/.NET, Vb.NET, C++, JavaScript  with professional knowledge of OOPs, Architectural Principles and Design, Resource management and Project Planning.<br><br><a href="https://www.freecodecamp.org/certification/fcc317185c6-1f79-44d6-a209-7a9d5b39d99b/foundational-c-sharp-with-microsoft">MY Certificate</a>     <a href="" onclick="downloadResume()" class="dnresume">Download Resume</a><br><br></div>
+            <div class="skill">
+                <div class="plang">
+                    <h2>Programming Language</h2>
+                     <div>
+                         <ul>
+                            <li>C#</li>
+                            <li>Visual Basic</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                            <li>JAVA</li>
+                        </ul>
+                     </div>
+                </div>
+                <div class="softskill">
+                    <h2>Soft Skills</h2>
+                    <div>
+                        <ul>
+                            <li>Detail-Oriented</li>
+                            <li>Communicative</li>
+                            <li>Leadership</li>
+                            <li>Problem-Solving</li>
+                            <li>Quality Assurance</li>
+                            <li>Instrumentalist</li>
+        
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <div class="techcontent">
+                <h2>Tech Stack</h2>
+                <Div class="techstack">
+                    <div>
+                        JavaScript | HTML | CSS |Jquery | XML
+                    </div>
+                    <div>
+                        C#/.NET | VB.NET |ASP.NET
+                    </div>
+                    <div>
+                        SSMS, MYSQL
+                    </div>
+                    <div>
+                        Github, Figma
+                    </div>
+                </Div>
+            </div>    
+    </div>
+
+    <div class="container" id="projects">
+        <h1 class="heading">My Projects</h1>
+        <div class="box-container">
+            <div class="box" id="cinema">
+                <div class="wapper">
+                <img src="images/apk1.png" alt="">
+                <img src="images/apk2.png" alt="">
+                <img src="images/apk3.png" alt="">
+                <img src="images/apk4.png" alt="">
+                <img src="images/apk5.png" alt="">
+                </div>
+                
+                <h3 >Cinema System</h3>
+                <p>This is a Complete Cinema hall ticket booking system based on C#.Net Framework.</p>
+                <div class="cnts cnts1">
+                    <p> This app is easy to use and Design an intuitive user interface for movie selection, seat booking.</p>
+                </div>
+                <a href="#cinema" class="btn" onclick="btn('.cnts1')">read more</a>
+            </div>
+            <div class="box" id="music">
+                <div class="wapper">
+                    <img src="images/media1.png" alt="">
+                    <img src="images/media2.png" alt="">
+                </div>
+                <h3>Music Player</h3>
+                <p>This is a modern music player with highly attractive and resposive UI and fully featured </p>
+                <div class="cnts cnts2">
+                    <p>and flexible control. This music app developed based on C#.Net Framework and other external UI developed tools.</p>
+                </div>
+                <a href="#music" class="btn" onclick="btn('.cnts2')">read more</a>
+            </div>
+            <div class="box" id="tic">
+                <div class="wapper">
+                    <img src="images/tik1.png" alt="">
+                    <img src="images/tik2.png" alt="">
+                    <img src="images/tik3.png" alt="">
+                </div>
+                <h3 >Tic Tac Toe</h3>
+                <p>This is a straightforward console-based gaming program implemented in the C++ language. </p>
+                <div class="cnts cnts3">
+                   <p>The game features a two-player mode for playing with a friend, as well as a single-player mode against the computer. Additionally, there is a help option available to provide guidance on how to play the Tic Tac Toe game in case of any confusion.</p>
+                </div> 
+                <a href="#tic" class="btn" onclick="btn('.cnts3')">read more</a>
+            </div>
+            <div class="box" id="water">
+                <div class="wapper">
+                    <img src="images/water1.png" alt="">
+                    <img src="images/water2.png" alt="">
+                </div>
+                <h3 >Water Billing System</h3>
+                <p>This application is a comprehensive console-based water billing system designed for managing </p>
+                   <div class="cnts cnts4">
+                      <p>customer details, water consumption units, and calculating charges in saccordance with the Nepal water billing system. It incorporates functionality to input customer information, record water consumption, and compute charges, including additional fees and discounts when applicable. </p>
+                   </div> 
+                <a href="#water" class="btn" onclick="btn('.cnts4')">read more</a>
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="contact" id="contact">
+        <div class="frm">
+            <form class="frm1" method="post">
+                <h1>Contact</h1>
+                <!-- <label>Name:    </label> -->
+                <input type="text" placeholder="Name" id="frmname" required><br>
+                <!-- <label>Phone:</label><br> -->
+                <input type="text" placeholder="Phone" id="phone"/><br>
+                <!-- <label>Email:</label><br> -->
+                <input type="text" placeholder="Email" id="email" required><br>
+                <!-- <label>Message:</label><br> -->
+                <textarea id="msg" placeholder="Write your message....." cols="31" rows="10"></textarea><br>
+                <button type="submit" id="sendBtn">Send</button><br>
+            </form> 
+        </div>
+        <div class="imgdiv">
+            <img src="images/Untitled-1.png" class="conimg">
+        </div>         
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script src="javascript/sendEmail.js"></script>
+
+   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="javascript/sendEmail.js">
+  
+</script>
+    
+    <script src="project.js"></script>
+    <Footer>
+        <hr>
+        <Div class="sociallink">
+            <a href="https://github.com/krishnapari"><img src="images/github.png" alt="github"></a>
+            <a href="https://linkedin.com/in/krishna-pariyar-9b4271286"><img src="images/linkedin.png" alt="linkedin"></a>
+            <a href="https://twitter.com/KrishnaP2057"><img src="images/twiter.png" alt="images/twiter"></a>
+        </Div>
+        <p>&copy;Krishna Pariyar</p>
+    </Footer>
+</body>
+</html>

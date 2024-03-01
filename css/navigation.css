@@ -1,0 +1,437 @@
+* {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(46, 78, 95);
+}
+.hdr {
+    display: flex;
+    flex-direction: row;
+   
+}
+.menu a{
+    color: whitesmoke;
+}
+.menu li {
+    display: inline-block;
+    margin-right: 7%; 
+}
+.navdiv{
+    width: 100%;
+}
+.menu {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    /* margin-left: 5rem; */
+    font-size: 1.40rem; 
+    font-weight: bold;
+    
+    
+}
+
+.logo {
+    
+    margin-left: 5vw;
+    margin-top: 10px;
+}
+
+.logo .txt {
+    
+    font-size: 60px;
+    background: linear-gradient(to right, rgb(53, 202, 191), rgb(213, 211, 211));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 2.5rem; 
+}
+.menubar{
+    display: none;
+    height: 4vh;
+        width: 4vh;
+        float: right;
+        margin-top: 1.3rem;
+        margin-right: 1rem;
+    
+}
+.menu2{
+    display: none;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+   
+}
+.hImg{
+    border: 2px solid white; 
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 10px;
+   
+    
+}
+.hImg h2{
+    text-align: center;
+}
+
+.homeDetail{
+   
+    width: 450px;
+    margin-left: 7%;
+    margin-top: 30px;
+   
+
+}
+.homeDetail p{
+    margin: 2%;  
+}
+.homeDetail #name{
+    font-weight: bold;
+    font-size: 30px;
+}
+#pen{
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+.techcontent .techstack div{
+    padding: 10px;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.floating-image {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @media screen and (min-width: 650px) {
+    .menu a {
+        text-decoration: none;
+        position: relative;
+      }
+    .logo .txt{
+        font-size: 65px;
+        
+    }
+    .logo{
+        margin-top: 4px;
+    }
+    .menu2{
+        display: none;
+    }
+    .menu ul li a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-bottom: -5px;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(53, 202, 191);
+        transform: scaleX(0);
+        transition: transform 0.3s;
+      }
+      
+    .menu  a:hover::after {
+        transform: scaleX(1);
+      }
+    .homeDetail{
+        font-size: 1.5rem;
+    }
+    .hImg2{
+        margin-left: 150px;
+        width: 20%;
+         
+      }
+
+    .hImg p{
+       
+        font-size: 20px;
+        }
+      .hImg #icon{
+        height: 50px;
+        width: 50px;
+       }
+    
+       .myimg{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid white;
+    }
+    #about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    .imgdiv1{
+        margin-right: 25px;
+    }
+    .text1 h1{
+        line-height: 1.3;
+        color: rgb(65, 148, 157);
+        font-size:62px;
+    }
+    .text1 h3{
+        color: rgb(65, 148, 157);
+    }
+    #maildiv{
+        border: 2px solid white; 
+        border-radius: 5px;
+        text-align: center;
+        width: 70%;
+    }
+    .text2{
+        width: 70%;
+        margin-left: 180px;
+        line-height:1.5;
+        margin-top: 20px;
+        
+    }
+    .aa #txt{
+        justify-content: center;
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(65, 148, 157);
+        margin-bottom: 50px;
+        
+    }
+    .aa{
+        border: 2px solid rgb(65, 148, 157);
+        border-radius: 10px;
+        width: 82%;
+        margin-left: 8%;
+        margin-top: 50px;
+    }
+    .skill{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .plang{
+        margin-right: 300px;
+    }
+    .plang li, .softskill li{
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    .plang div{
+        border: 2px solid  rgb(65, 148, 157);
+        border-radius: 5px ;
+        height: 160px;
+    }
+    .softskill div{
+        border: 2px solid  rgb(65, 148, 157);
+        width: 300px;
+        border-radius: 5px ;
+    
+    }
+    .techstack{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .techstack div{
+        border: 2px solid  rgb(65, 148, 157);
+        border-radius: 5px ;
+        margin-right: 40px;
+        margin-bottom: 60px;
+    }
+    .techcontent {
+        justify-content: center;
+        margin-left: 160px;
+        
+    }
+    
+    
+  }
+  .text2 a{
+    background-color:rgb(53, 202, 191) ;
+    padding:5px;
+    border: 1px black solid;
+    color: black;
+    border-radius: 5px;
+  }
+
+@media screen and (max-width: 650px) {
+    .text2 .dnresume{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu2 a{
+        color: whitesmoke;
+        text-align: center;
+    }
+    
+    .menu2 li{
+        /* display: block; */
+        text-align: justify;    
+        margin-bottom: 40px;
+    }
+   
+    .menu2 {
+        position: fixed;
+        border-radius: 8px;
+        list-style: none;
+        width: 50%; 
+        text-align: center;
+        margin-left:5%;
+       margin-top: 3.3rem;
+        margin-right: 100%;
+        padding-left:60px ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 64%;
+        /* margin-left: 5rem; */
+        font-size: 1.40rem; 
+        font-weight: bold;
+        background-color:black;
+             
+    }
+    .menubar{
+        display: block;
+        
+    }
+    .homeDetail{
+        font-size: 1rem;
+        margin-left: 4.5%;
+    }
+    .hImg2{
+        margin-left: 6%;
+        width: 20%;
+        margin-top: 2rem;
+         
+      }
+    #crtimg{
+        height: 20rem;
+        width: 19rem;
+    }
+   .hImg p{
+       
+        font-size: 20px;
+   }
+   .hImg #icon{
+    height: 30px;
+    width: 30px;
+   }
+.imgdiv1{
+    
+    margin-left: 5%;
+}
+   .myimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
+}
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.imgdiv1{
+    margin-right: 25px;
+}
+.text1 h1{
+    line-height: 1.3;
+    color: rgb(65, 148, 157);
+    font-size:40px;
+}
+.text1 h3{
+    color: rgb(65, 148, 157);
+}
+#maildiv{
+    border: 2px solid white; 
+    border-radius: 5px;
+    text-align: center;
+    width: 70%;
+}
+.text2{
+    width: 80%;
+    margin-left: 2rem;
+    line-height:1.5;
+    margin-top: 20px;
+    text-align: justify;
+    
+}
+.aa #txt{
+    justify-content: center;
+    text-align: center;
+    /* text-decoration: underline; */
+    color: rgb(65, 148, 157);
+    margin-bottom: 50px;
+    
+}
+.aa{
+    border: 2px solid rgb(65, 148, 157);
+    border-radius: 10px;
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 50px;
+    padding: 0px;
+}
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.plang, .softskill,.techcontent{
+   margin-top: 1.3rem;
+}
+.plang li, .softskill li{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.plang div{
+    border: 2px solid  rgb(65, 148, 157);
+    border-radius: 5px ;
+    height: 160px;
+
+}
+.softskill,.techstack,.techcontent h2{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.softskill div{
+    border: 2px solid  rgb(65, 148, 157);
+    width:17rem;
+    border-radius: 5px ;
+
+}
+
+.techstack div{
+    border: 2px solid  rgb(65, 148, 157);
+    border-radius: 5px ;
+    margin-bottom: 10px;
+}
+
+   
+}

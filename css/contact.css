@@ -1,0 +1,106 @@
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:0px;
+    text-align: center;
+    margin-top: 50px;
+   
+}
+.contact .frm input{
+    height: 40px;
+    margin-top: 10px;
+    border: 2px black solid;
+    background-color:rgb(46, 78, 95) ;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    width: 17rem;
+}
+.contact .frm textarea{
+    margin-top: 25px;
+    border:2px black solid;
+    background-color:rgb(46, 78, 95) ;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 17rem;
+    resize: none;
+    padding: 5px;
+
+
+}
+.contact .frm button{
+    margin-top: 25px;
+    border:2px black solid;
+    background-color:rgb(46, 78, 95) ;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.contact .frm #sendBtn{
+  background-color:rgb(65, 148, 157) ;
+}
+.contact .frm #sendBtn:hover{
+  letter-spacing: 1px;
+    background-color: rgb(53, 202, 191);
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.conimg {
+
+    animation: float 3s ease-in-out infinite;
+    
+      
+  }
+  .imgdiv img{
+    
+        object-fit: contain;
+      
+      
+  }
+@media (max-width:768px){
+    .imgdiv{
+        display: none;
+    }
+}
+@media (min-width:768px){
+  .contact .frm input{
+    height: 50px;
+    margin-top: 30px;
+    border: 2px black solid;
+    background-color:rgb(46, 78, 95) ;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 20rem;
+    padding: 5px;
+
+}
+.contact .frm textarea{
+    margin-top: 45px;
+    border:2px black solid;
+    background-color:rgb(46, 78, 95) ;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 20rem;
+    padding: 5px;
+
+}
+.contact .frm button{
+    margin-top: 25px;
+    border:2px black solid;
+    background-color:rgb(46, 78, 95) ;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+}
