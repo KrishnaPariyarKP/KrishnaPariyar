@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function downloadResume(){
      // Replace 'path_to_your_resume.pdf' with the actual path to your resume PDF file
-  const resumeUrl = 'myresume.pdf';
+  const resumeUrl = 'krishnaPariyar.pdf';
   
   // Create an anchor element
   const a = document.createElement('a');
   a.href = resumeUrl;
   
   // Set the download attribute to force download
-  a.download = 'myresume.pdf';
+  a.download = 'krishnaPariyar.pdf';
   
   // Append the anchor element to the body
   document.body.appendChild(a);
